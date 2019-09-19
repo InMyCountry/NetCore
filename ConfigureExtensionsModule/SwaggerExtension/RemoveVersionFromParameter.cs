@@ -14,8 +14,12 @@ namespace SwashbuckleModule
     {
         public void Apply(Operation operation, OperationFilterContext context)
         {
-            var versionParameter = operation.Parameters.Single(p => p.Name == "version");
-            operation.Parameters.Remove(versionParameter);
+
+            var versionParameter = operation.Parameters.FirstOrDefault(p => p.Name == "version");
+            if (versionParameter != null)
+            {
+                operation.Parameters.Remove(versionParameter);
+            }
         }
     }
 }
