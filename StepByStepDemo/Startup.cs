@@ -10,6 +10,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using RabbitMQModule;
 
 namespace StepByStepDemo
 {
@@ -32,6 +33,7 @@ namespace StepByStepDemo
             services.AddJwtConfigByUser();
             #endregion
 
+            services.AddSingleton<RabbitMQConnect>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
