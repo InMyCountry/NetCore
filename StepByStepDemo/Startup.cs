@@ -11,6 +11,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using RabbitMQModule;
+using RedisModule;
 
 namespace StepByStepDemo
 {
@@ -34,7 +35,8 @@ namespace StepByStepDemo
             #endregion
 
             services.AddSingleton<RabbitMQConnect>();
-
+            services.AddSingleton<RedisHelper>();
+            services.AddUserRedis();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
 
