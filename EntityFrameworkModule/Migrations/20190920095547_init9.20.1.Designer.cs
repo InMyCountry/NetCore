@@ -4,14 +4,16 @@ using EntityFrameworkModule;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace EntityFrameworkModule.Migrations
 {
     [DbContext(typeof(StepByStepDbContext))]
-    partial class StepByStepDbContextModelSnapshot : ModelSnapshot
+    [Migration("20190920095547_init9.20.1")]
+    partial class init9201
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

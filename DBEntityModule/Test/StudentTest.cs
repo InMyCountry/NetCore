@@ -17,5 +17,19 @@ namespace DBEntityModule.Test
         [Required]
         [Display(Name = "年龄")]
         public int Age { get; set; }
+        
+        public List<Student> FKStudents { get; set; }
+    }
+    public class Student : IEntity<string>
+    {
+        [Required]
+        [Display(Name = "姓名")]
+        public string Name { get; set; }
+        [Required]
+        [Display(Name = "性别")]
+        public string Gender { get; set; }
+        [Required]
+        [Display(Name = "年龄")]
+        public int Age { get; set; }
     }
 }
