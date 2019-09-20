@@ -23,13 +23,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMQModule", "RabbitMQM
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RedisModule", "RedisModule\RedisModule.csproj", "{B26ABD6C-3D78-47D8-A50A-ACB329F03FE3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repository.IServices", "Repository.IServices\Repository.IServices.csproj", "{B6ABBDD0-6141-4967-8D36-CB0F4F797A5F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repository.IServices", "Repository.IServices\Repository.IServices.csproj", "{B6ABBDD0-6141-4967-8D36-CB0F4F797A5F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repository.Services", "Repository.Services\Repository.Services.csproj", "{4E303E2B-20F8-443D-B962-0D76C22C220B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repository.Services", "Repository.Services\Repository.Services.csproj", "{4E303E2B-20F8-443D-B962-0D76C22C220B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityFrameworkModule", "EntityFrameworkModule\EntityFrameworkModule.csproj", "{31719DB4-FEA7-49D9-8CA4-819B305F138D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EntityFrameworkModule", "EntityFrameworkModule\EntityFrameworkModule.csproj", "{31719DB4-FEA7-49D9-8CA4-819B305F138D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBEntityModule", "DBEntityModule\DBEntityModule.csproj", "{B0C926EA-A887-4EFE-B11B-13670DA5A72D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DBEntityModule", "DBEntityModule\DBEntityModule.csproj", "{B0C926EA-A887-4EFE-B11B-13670DA5A72D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6.Document", "6.Document", "{E6275E4A-A99D-47D0-9184-4D2D41A7374F}"
+	ProjectSection(SolutionItems) = preProject
+		C:\Users\Administrator\Desktop\Consul安装.docx = C:\Users\Administrator\Desktop\Consul安装.docx
+		C:\Users\Administrator\Desktop\RabbutMQ.docx = C:\Users\Administrator\Desktop\RabbutMQ.docx
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
