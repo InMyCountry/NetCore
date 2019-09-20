@@ -16,6 +16,8 @@
     <ProjectReference Include="..\EntityFrameworkModule\EntityFrameworkModule.csproj" />
     <ProjectReference Include="..\RabbitMQModule\RabbitMQModule.csproj" />
     <ProjectReference Include="..\RedisModule\RedisModule.csproj" />
+    <ProjectReference Include="..\Repository.IServices\Repository.IServices.csproj" />
+    <ProjectReference Include="..\Repository.Services\Repository.Services.csproj" />
   </ItemGroup>
 
 </Project>
