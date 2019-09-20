@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using EntityFrameworkModule;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ApiExplorer;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
@@ -32,6 +34,12 @@ namespace StepByStepDemo
             //添加版本服务
             services.AddApiVersionConfigByUser();
             services.AddJwtConfigByUser();
+
+            //数据库配置
+            services.AddDbContext<StepByStepDbContext>(Options => {
+                Options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"));
+            });
+
             #endregion
 
             services.AddSingleton<RabbitMQConnect>();

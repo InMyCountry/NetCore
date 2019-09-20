@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29009.5
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StepByStepDemo", "StepByStepDemo\StepByStepDemo.csproj", "{08062DFF-3E0E-4588-9B68-0A7D501789C4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StepByStepDemo", "StepByStepDemo\StepByStepDemo.csproj", "{08062DFF-3E0E-4588-9B68-0A7D501789C4}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.UI", "1.UI", "{5E606439-83F5-4047-991C-9C51A541F267}"
 EndProject
@@ -15,13 +15,21 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.Entity", "4.Entity", "{70
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.Infrastructure", "5.Infrastructure", "{1469B77A-4AD8-4BC9-9953-BFE519072B89}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConfigureExtensionsModule", "ConfigureExtensionsModule\ConfigureExtensionsModule.csproj", "{3307EC0D-52ED-4992-9B66-AB47B2907AD3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConfigureExtensionsModule", "ConfigureExtensionsModule\ConfigureExtensionsModule.csproj", "{3307EC0D-52ED-4992-9B66-AB47B2907AD3}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCoreApiCommonModule", "AspNetCoreApiCommonModule\AspNetCoreApiCommonModule.csproj", "{83127D6D-A0C1-4649-AF7B-367DD35EAC63}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQModule", "RabbitMQModule\RabbitMQModule.csproj", "{6B902440-69F6-4A23-BBAF-9C280161EBB3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMQModule", "RabbitMQModule\RabbitMQModule.csproj", "{6B902440-69F6-4A23-BBAF-9C280161EBB3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedisModule", "RedisModule\RedisModule.csproj", "{B26ABD6C-3D78-47D8-A50A-ACB329F03FE3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RedisModule", "RedisModule\RedisModule.csproj", "{B26ABD6C-3D78-47D8-A50A-ACB329F03FE3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repository.IServices", "Repository.IServices\Repository.IServices.csproj", "{B6ABBDD0-6141-4967-8D36-CB0F4F797A5F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repository.Services", "Repository.Services\Repository.Services.csproj", "{4E303E2B-20F8-443D-B962-0D76C22C220B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityFrameworkModule", "EntityFrameworkModule\EntityFrameworkModule.csproj", "{31719DB4-FEA7-49D9-8CA4-819B305F138D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBEntityModule", "DBEntityModule\DBEntityModule.csproj", "{B0C926EA-A887-4EFE-B11B-13670DA5A72D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,6 +57,22 @@ Global
 		{B26ABD6C-3D78-47D8-A50A-ACB329F03FE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B26ABD6C-3D78-47D8-A50A-ACB329F03FE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B26ABD6C-3D78-47D8-A50A-ACB329F03FE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6ABBDD0-6141-4967-8D36-CB0F4F797A5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6ABBDD0-6141-4967-8D36-CB0F4F797A5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6ABBDD0-6141-4967-8D36-CB0F4F797A5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6ABBDD0-6141-4967-8D36-CB0F4F797A5F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E303E2B-20F8-443D-B962-0D76C22C220B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E303E2B-20F8-443D-B962-0D76C22C220B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E303E2B-20F8-443D-B962-0D76C22C220B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E303E2B-20F8-443D-B962-0D76C22C220B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{31719DB4-FEA7-49D9-8CA4-819B305F138D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31719DB4-FEA7-49D9-8CA4-819B305F138D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31719DB4-FEA7-49D9-8CA4-819B305F138D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31719DB4-FEA7-49D9-8CA4-819B305F138D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0C926EA-A887-4EFE-B11B-13670DA5A72D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0C926EA-A887-4EFE-B11B-13670DA5A72D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0C926EA-A887-4EFE-B11B-13670DA5A72D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0C926EA-A887-4EFE-B11B-13670DA5A72D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -59,6 +83,10 @@ Global
 		{83127D6D-A0C1-4649-AF7B-367DD35EAC63} = {094F545D-B69D-4515-9F1E-558D650BB8D1}
 		{6B902440-69F6-4A23-BBAF-9C280161EBB3} = {094F545D-B69D-4515-9F1E-558D650BB8D1}
 		{B26ABD6C-3D78-47D8-A50A-ACB329F03FE3} = {094F545D-B69D-4515-9F1E-558D650BB8D1}
+		{B6ABBDD0-6141-4967-8D36-CB0F4F797A5F} = {9DD696CB-A662-4673-9E9D-B334339CDF75}
+		{4E303E2B-20F8-443D-B962-0D76C22C220B} = {9DD696CB-A662-4673-9E9D-B334339CDF75}
+		{31719DB4-FEA7-49D9-8CA4-819B305F138D} = {9DD696CB-A662-4673-9E9D-B334339CDF75}
+		{B0C926EA-A887-4EFE-B11B-13670DA5A72D} = {9DD696CB-A662-4673-9E9D-B334339CDF75}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8B54548A-647F-4465-9253-F8F104848447}

@@ -74,5 +74,11 @@ namespace StepByStepDemo.Controllers
             var num = _rabbitMQConnect.BasicGet(QueueName);
             return Ok(num);
         }
+     //   [HttpGet]
+     //   public IActionResult GetIpAddress()
+     //   {
+     //_rabbitMQConnect.GetIp();
+     //       return Ok();
+     //   }
     }
 }

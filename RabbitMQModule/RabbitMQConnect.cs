@@ -2,6 +2,10 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Net;
+using RabbitMQ.Client.Content;
+using RabbitMQ.Util;
+using System.IO;
 
 namespace RabbitMQModule
 {
@@ -40,6 +44,9 @@ namespace RabbitMQModule
         {
             try
             {
+                NetworkBinaryWriter networkBinaryReader = new NetworkBinaryWriter(new MemoryStream());
+                StreamWireFormatting.WriteString(networkBinaryReader, "nihao");
+
                 //消息属性
                 //  var propertity=  channel.CreateBasicProperties();
                 //消息推送
@@ -64,9 +71,20 @@ namespace RabbitMQModule
         public string  BasicGet(string QueueName)
         {
             var result= this.channel.BasicGet(QueueName, true) ;
+
             return Encoding.UTF8.GetString(result.Body);
         }
 
+
+        //public void GetIp()
+        //{
+        //    IPAddress iPAddress = IPAddress.Parse("1.1.1.1");
+        //    IPAddress iPAddress1 = IPAddress.Parse("1.1.1.2");
+        //    IPAddress iPAddress2 = IPAddress.Parse("127.0.0.1");
+        //    IPAddress iPAddress3 = IPAddress.Parse("127.0.0.2");
+        //  var ip=  TcpClientAdapterHelper.GetMatchingHost(new[] { iPAddress, iPAddress1, iPAddress2, iPAddress3 }, System.Net.Sockets.AddressFamily.Unspecified);
+            
+        //}
         public void Dispose()
         {
             channel.Close();
