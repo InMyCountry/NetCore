@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AspNetCoreApiCommonModule.Filters;
 using EntityFrameworkModule;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -48,11 +49,22 @@ namespace StepByStepDemo
             services.AddSingleton<RedisHelper>();
             services.AddUserRedis();
 
+            #region 依赖注入
             services.AddScoped<IStudentTestService, StudentTestService>();
             services.AddScoped<IUnitOfWork, UnitOfWork>();
+            services.AddScoped<ISystemMenuService, SystemMenuService>();
+            services.AddScoped<ISystemRoleService, SystemRoleService>();
+            services.AddScoped<IRoleMenuService, RoleMenuService>();
+            services.AddScoped<ISystemUserService, SystemUserService>();
+            #endregion
 
 
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            services.AddMvc(options =>
+            {
+                //options.Filters.Add(typeof(ValidateModelAttribute));
+
+            }).SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+          //  services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

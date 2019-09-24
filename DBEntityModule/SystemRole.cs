@@ -22,14 +22,14 @@ namespace DBEntityModule
         /// 角色类型1超管2系管
         /// </summary>
         [Required]
-        [MaxLength(10)]
+        //[MaxLength(10)]
         public Int32 RoleType { get; set; }
 
         /// <summary>
         /// 是否系统默认
         /// </summary>
         [Required]
-        [MaxLength(1)]
+        //[MaxLength(1)]
         public Boolean IsSystem { get; set; }
         /// <summary>
         /// 用户角色关联表

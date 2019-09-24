@@ -54,7 +54,7 @@ namespace DBEntityModule
         /// <summary>
         /// 登录次数
         /// </summary>
-        [MaxLength(10)]
+        //[MaxLength(10)]
         public Int32 LoginCount { get; set; } = 0;
 
         /// <summary>
@@ -66,14 +66,14 @@ namespace DBEntityModule
         /// <summary>
         /// 最后一次登录时间
         /// </summary>
-        [MaxLength(23)]
+        //[MaxLength(23)]
         public DateTime LoginLastTime { get; set; }
 
         /// <summary>
         /// 是否锁定
         /// </summary>
         [Required]
-        [MaxLength(1)]
+        //[MaxLength(1)]
         public Boolean IsLock { get; set; }
 
         /// <summary>

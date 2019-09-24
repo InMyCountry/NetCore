@@ -41,7 +41,7 @@ namespace DBEntityModule
         /// <summary>
         /// 排序数字
         /// </summary>
-        [MaxLength(10)]
+        //[MaxLength(10)]
         public Int32 Sort { get; set; }
 
         /// <summary>
@@ -54,14 +54,14 @@ namespace DBEntityModule
         /// 是否显示
         /// </summary>
         [Required]
-        [MaxLength(1)]
+        //[MaxLength(1)]
         public Boolean IsDisplay { get; set; }
 
         /// <summary>
         /// 是否系统默认
         /// </summary>
         [Required]
-        [MaxLength(1)]
+        //[MaxLength(1)]
         public Boolean IsSystem { get; set; }
 
         public ICollection<RoleMenu> RoleMenus { get; set; }

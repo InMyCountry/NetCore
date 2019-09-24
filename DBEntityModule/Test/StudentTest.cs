@@ -22,6 +22,8 @@ namespace DBEntityModule.Test
     }
     public class Student : IEntity<string>
     {
+    
+      
         [Required]
         [Display(Name = "姓名")]
         public string Name { get; set; }

@@ -14,7 +14,7 @@ namespace DBEntityModule.BaseEntity
         /// 是否删除
         /// </summary>
         [Required]
-        [MaxLength(1)]
+        //[MaxLength(1)]
         public virtual Boolean IsDelete { get; set; }
 
         /// <summary>
@@ -26,7 +26,7 @@ namespace DBEntityModule.BaseEntity
         /// 添加时间
         /// </summary>
         [Required]
-        [MaxLength(23)]
+        //[MaxLength(23)]
         public DateTime AddTime { get; set; }
     }
 }
