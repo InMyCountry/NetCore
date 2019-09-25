@@ -92,5 +92,12 @@ namespace Repository.Services.Services
             return dbset;
         }
 
+
+        public bool IsExist(Expression<Func<TEntity, bool>> where)
+        {
+            int count = dbset.Count(where);
+            return count > 0;
+        }
+
     }
 }

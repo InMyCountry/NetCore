@@ -20,5 +20,6 @@ namespace Repository.IServices.IServices
         IEnumerable<TEntity> GetAll();
         IEnumerable<TEntity> GetMany(Expression<Func<TEntity, bool>> where);
         IEnumerable<TEntity> GetAllLazy();
+        bool IsExist(Expression<Func<TEntity, bool>> where);
     }
 }

@@ -15,7 +15,7 @@ namespace ConfigureExtensionsModule.SwaggerExtension.JwtModel
         /// </summary>
         [Display(Name = "ID")]
         [Required(AllowEmptyStrings = false, ErrorMessage = "ID不能为空")]
-        public int ID { get; set; }
+        public string ID { get; set; }
         /// <summary>
         /// 名称
         /// </summary>
