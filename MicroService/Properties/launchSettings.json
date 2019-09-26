@@ -4,7 +4,7 @@
     "windowsAuthentication": false, 
     "anonymousAuthentication": true, 
     "iisExpress": {
-      "applicationUrl": "http://localhost:8810",
+      "applicationUrl": "http://localhost:51121",
       "sslPort": 0
     }
   },
@@ -12,18 +12,16 @@
     "IIS Express": {
       "commandName": "IISExpress",
       "launchBrowser": true,
-     // "launchUrl": "api/values",
-      "launchUrl": "swagger",
+      "launchUrl": "api/values",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "StepByStepDemo": {
+    "MicroService": {
       "commandName": "Project",
       "launchBrowser": true,
-    //  "launchUrl": "api/values",
-      "launchUrl": "swagger",
-      "applicationUrl": "http://localhost:5001",
+      "launchUrl": "api/values",
+      "applicationUrl": "http://localhost:5000",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }

@@ -13,10 +13,14 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using Ocelot.DependencyInjection;
 using RabbitMQModule;
 using RedisModule;
 using Repository.IServices.IServices;
 using Repository.Services.Services;
+using StepByStep.Common;
+using StepByStep.Common.Extension;
+using StepByStep.Common.Model;
 
 namespace StepByStepDemo
 {
@@ -33,7 +37,7 @@ namespace StepByStepDemo
         public void ConfigureServices(IServiceCollection services)
         {
             #region 配置
-            services.AddUserSwagger();
+            services.AddUserSwaggerWithVersion();
             //添加版本服务
             services.AddApiVersionConfigByUser();
             services.AddJwtConfigByUser();
@@ -64,7 +68,9 @@ namespace StepByStepDemo
                 //options.Filters.Add(typeof(ValidateModelAttribute));
 
             }).SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
-          //  services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            //  services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -75,7 +81,7 @@ namespace StepByStepDemo
                 app.UseDeveloperExceptionPage();
             }
             //swagger
-            app.UseUserSwagger(provider);
+            app.UseUserSwaggerWithVersion(provider);
             //授权
             app.UseAuthentication();
             

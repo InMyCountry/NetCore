@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using ConfigureExtensionsModule.SwaggerExtension.JwtModel;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using StepByStep.Common.Helper;
+using StepByStep.Common.Model;
 
 namespace StepByStepDemo.Controllers
 {

@@ -9,7 +9,8 @@ using Repository.IServices.IServices;
 using Microsoft.Extensions.Logging;
 using Microsoft.AspNetCore.Authorization;
 using DBEntityModule.Test;
-using ConfigureExtensionsModule.SwaggerExtension.JwtModel;
+using StepByStep.Common.Model;
+using StepByStep.Common.Helper;
 
 namespace StepByStepDemo.Controllers
 {
